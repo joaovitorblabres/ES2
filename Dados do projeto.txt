@@ -1,0 +1,27 @@
+10 semanas de desenvolvimento
+=> MVP
+   => Cadastro de empresa/usuário
+   => Criação de eventos
+   => Visualização no mapa (sem filtros)
+   => Lista de eventos (cliente/empresa)
+   => Front-End mais ou menos pronto
+
++++++++++++++++++++
+Recursos
+=> Ruby (2.4.2)
+=> PostgreSQL (10)
+=> Bootstrap (GEM 4.1.3)
+=> JS (jQuery, JSON, Ajax)
+=> MVC
+
++++++++++++++++++++
+Canal:
+=> Telegram
+
++++++++++++++++++++
+Repositórios:
+=> GitHub https://github.com/joaovitorblabres/ES2.git
+
++++++++++++++++++++
+Kanban
+=> Trello: https://trello.com/invite/b/roPmOHuW/354e882c50b757037f12ca780cfe31d5/kanbam-es-2
