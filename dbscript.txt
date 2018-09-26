@@ -1,0 +1,9 @@
+rails generate scaffold Voluntario nome:string informacao:text contato:string cpf:string
+
+rails generate scaffold Empresa nome:string contato:string cpnj:string
+
+
+rails generate scaffold Categoria idCategoria:primary_key nome:string
+change_column(:voluntario, :nome, :string, limit: 50)
+
+rails generate scaffold Evento idEvento:primary_key dataEvento:date horaInicio:datetime horaFim:datetime latitude:float longitude:float
