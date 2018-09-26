@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idVoluntario: 
+  nome: MyString
+  informacao: MyText
+
+two:
+  idVoluntario: 
+  nome: MyString
+  informacao: MyText

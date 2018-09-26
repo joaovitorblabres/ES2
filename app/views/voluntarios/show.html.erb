@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @voluntario.nome %>
+</p>
+
+<p>
+  <strong>Informacao:</strong>
+  <%= @voluntario.informacao %>
+</p>
+
+<p>
+  <strong>Contato:</strong>
+  <%= @voluntario.contato %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @voluntario.cpf %>
+</p>
+
+<%= link_to 'Edit', edit_voluntario_path(@voluntario) %> |
+<%= link_to 'Back', voluntarios_path %>

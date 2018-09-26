@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dataEvento: 2018-09-26
+  horaInicio: 2018-09-26 09:48:19
+  horaFim: 2018-09-26 09:48:19
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  dataEvento: 2018-09-26
+  horaInicio: 2018-09-26 09:48:19
+  horaFim: 2018-09-26 09:48:19
+  latitude: 1.5
+  longitude: 1.5
