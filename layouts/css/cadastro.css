@@ -6,7 +6,7 @@ body{
 
 .header-top-offset{
   position: absolute;
-  top:-75px;
+  top: -75px;
   width: 100%;
   z-index: 2;
 }
@@ -49,6 +49,9 @@ body{
   background-color: rgba(255, 255, 255, 0.97);
 }
 
+.demo-card-square{
+  top: -60px;
+}
 .mdl-card{
   overflow: inherit;
 }
@@ -59,6 +62,7 @@ body{
   text-align: center;
   margin-top: 85px;
   padding-bottom: 0;
+  font-size: 20px;
 }
 
 .mdl-textfield__label{
@@ -71,4 +75,24 @@ body{
 
 .mdl-button{
   color:rgba(0,0,0,0.8);
+}
+
+.tab_btn{
+  border-radius: 2px;
+  box-shadow: 1px 1px #C3C3C3;
+  background-color: rgb(68,138,255);
+  color: white;
+  border: none;
+  padding: 4px;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.btn_div{
+  text-align:center;
+  padding: 10px 0 4px 0;
+  height: 30px;
 }
