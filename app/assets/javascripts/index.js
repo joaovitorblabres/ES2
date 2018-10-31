@@ -1,3 +1,5 @@
+//Possivel solução para função de busca de locais próximos: https://webdesign.tutsplus.com/pt/tutorials/how-to-add-branded-branch-locations-to-google-maps--cms-20457
+
 function initMap() {
 
   var myLatLng = {
@@ -43,5 +45,9 @@ var infowindow = new google.maps.InfoWindow({maxWidth: 300});
       }
     });
   }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> f3e6c3d7d49314ce591b77aa003c92d805ccedad
 }
