@@ -1,0 +1,48 @@
+body{
+  background-color: #EFEFEF;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  line-height: 5px;
+}
+
+.page-content{
+  background-color: #FFF;
+  max-width: 60%;
+  min-width: 275px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 0;
+  box-shadow: 1px 1px #C3C3C3;
+  text-align: center;
+}
+
+.mdl-textfield{
+  width: 400px;
+  max-width: 98%;
+}
+
+p{
+  margin: 8px 0 -2px;
+  text-align: left;
+}
+
+.mdl-textfield__input{
+  font-size: 14px;
+}
+
+.mdl-button--raised.mdl-button--colored{
+  margin: 0 0 10px;
+}
+
+textarea#desc{
+  width: 98%;
+  height: 100px;
+  max-height: 25%;
+}
+
+#mapouter {
+  margin: auto;
+  height: 400px;  /* The height is 400 pixels */
+  width: 80%;  /* The width is the width of the web page */
+}

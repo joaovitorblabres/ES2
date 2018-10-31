@@ -10,22 +10,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <script defer src="js/cadastro.js"></script>
+    <link rel="stylesheet" href="css/criacao_eventos.css">
+    <script defer src="js/criacao_eventos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout">
       <main class="mdl-layout__content">
         <div class="page-content">
-          <form action="#">
+          <form id="evento" action="#">
             <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" id="sample1">
-              <label class="mdl-textfield__label" for="sample1">Text...</label>
+              <p>Nome</p>
+              <input class="mdl-textfield__input" type="text" id="nome">
+              <br><p>Data do Evento</p>
+              <input class="mdl-textfield__input" type="date" id="dataEvento">
+              <br><p>Horário Início</p>
+              <input class="mdl-textfield__input" type="time" id="horaIni">
+              <br><p>Horário Fim</p>
+              <input class="mdl-textfield__input" type="time" id="horaFim">
+              <br><p>Categoria</p>
+              <select id="categoria">
+                <option value="1">Idosos</option>
+                <option value="2">Ação Social</option>
+                <option value="3">Evento com Crianças</option>
+                <option value="4">Distribuição de Alimentos</option>
+              </select>
+              <br><p>Descrição do Evento</p>
+              <textarea form="evento" id="desc"></textarea>
+              <input type="hidden" id="lati" name="lag" value="0">
+              <input type="hidden" id="long" name="long" value="0">
             </div>
+            <div id="mapouter"></div>
+            <br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+              Cadastrar
+            </button>
           </form>
         </div>
       </main>
     </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD80lU6FBbV1_lCp-n5w_KJD8vf1OhOu14&callback=initMap"></script>
   </body>
 </html>
