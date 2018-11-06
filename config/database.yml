@@ -10,8 +10,8 @@ development:
   database: voluntariza
   host: localhost
   pool: 5
-  username: voluntariza
-  password: voluntariza
+  username: anthony
+  password: anthony123
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
@@ -26,4 +26,3 @@ test:
   username: voluntariza
   password: voluntariza
   timeout: 5000
-

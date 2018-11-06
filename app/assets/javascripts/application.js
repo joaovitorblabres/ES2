@@ -13,5 +13,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery
+//= require jquery.nicescroll/dist/jquery.nicescroll.min
 //= require material
+//= require_tree .

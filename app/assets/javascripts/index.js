@@ -45,9 +45,4 @@ var infowindow = new google.maps.InfoWindow({maxWidth: 300});
       }
     });
   }
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> f3e6c3d7d49314ce591b77aa003c92d805ccedad
 }

@@ -7,11 +7,26 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+      <%= render 'layouts/partials/header' %>
+
+      <%= render 'layouts/partials/sidebar' %>
+
+      <main class="mdl-layout__content mdl-color--grey-100">
+
+        <%= yield %>
+
+      </main>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD80lU6FBbV1_lCp-n5w_KJD8vf1OhOu14&callback=initMap">
+    </script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 {
   "name": "voluntariza",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery.nicescroll": "^3.7.6"
+  }
 }
