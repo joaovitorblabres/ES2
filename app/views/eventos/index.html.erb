@@ -1,35 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+  <div>
+    <h3>Eventos</h3>
 
-<h1>Eventos</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Dataevento</th>
+          <th>Horainicio</th>
+          <th>Horafim</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Dataevento</th>
-      <th>Horainicio</th>
-      <th>Horafim</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody>
+        <% @eventos.each do |evento| %>
+          <tr>
+            <td><%= evento.dataEvento %></td>
+            <td><%= evento.horaInicio %></td>
+            <td><%= evento.horaFim %></td>
+            <td><%= evento.latitude %></td>
+            <td><%= evento.longitude %></td>
+            <td><%= link_to 'Show', evento %></td>
+            <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
+            <td><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-  <tbody>
-    <% @eventos.each do |evento| %>
-      <tr>
-        <td><%= evento.dataEvento %></td>
-        <td><%= evento.horaInicio %></td>
-        <td><%= evento.horaFim %></td>
-        <td><%= evento.latitude %></td>
-        <td><%= evento.longitude %></td>
-        <td><%= link_to 'Show', evento %></td>
-        <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
-        <td><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  </div>
 
-<br>
-
-<%= link_to 'New Evento', new_evento_path %>
+</div>

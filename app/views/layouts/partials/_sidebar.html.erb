@@ -1,8 +1,8 @@
 <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
   <header class="demo-drawer-header">
-    <%= image_tag user_avatar(current_user), class: 'demo-avatar' %>
+    <%= image_tag user_avatar(logged), class: 'demo-avatar' %>
     <div class="demo-avatar-dropdown">
-      <span><%= current_user.email %></span>
+      <span><%= logged.email %></span>
       <div class="mdl-layout-spacer"></div>
       <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
         <i class="material-icons" role="presentation">arrow_drop_down</i>
@@ -10,10 +10,18 @@
       </button>
       <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
         <li class="mdl-menu__item">
-          <%= link_to 'Minha conta', edit_user_registration_path %>
+          <% if current_user %>
+            <%= link_to 'Minha conta', edit_user_registration_path %>
+          <% else %>
+            <%= link_to 'Minha conta', edit_company_registration_path %>
+          <% end %>
         </li>
         <li class="mdl-menu__item">
-          <%= link_to 'Sair', destroy_user_session_path, method: :delete %>
+          <% if current_user %>
+            <%= link_to 'Sair', destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to 'Sair', destroy_company_session_path, method: :delete %>
+          <% end %>
         </li>
       </ul>
     </div>

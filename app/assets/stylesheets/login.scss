@@ -1,0 +1,68 @@
+.header-top-offset{
+  position: absolute;
+  top:-75px;
+  width: 100%;
+  z-index: 2;
+}
+
+.mdl-card__supporting-text{
+  padding-top: 0;
+}
+
+.righto{
+  color: white;
+  font-weight: 1000;
+  background-color: #2962FF;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 800px) {
+  .card{
+    margin: auto;
+    margin-top: 15%;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .card{
+    margin: auto;
+    margin-top: 30%;
+    max-width: 90%;
+  }
+}
+
+.imglogo{
+  display: block;
+  width: 150px;
+  margin: auto;
+  border: solid #1e8ffb 2px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+.mdl-card{
+  overflow: inherit;
+}
+
+.mdl-card__title{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 85px;
+  padding-bottom: 0;
+}
+
+.mdl-textfield__label{
+  color: #888;
+}
+
+.mdl-textfield{
+  padding: 20px 0;
+}
+
+.mdl-button{
+  color:rgba(0,0,0,0.8);
+}

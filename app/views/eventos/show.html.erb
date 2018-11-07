@@ -1,29 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+  <div>
+    <h3>Evento</h3>
+    <p>
+      <strong>Dataevento:</strong>
+      <%= @evento.dataEvento %>
+    </p>
 
-<p>
-  <strong>Dataevento:</strong>
-  <%= @evento.dataEvento %>
-</p>
+    <p>
+      <strong>Horainicio:</strong>
+      <%= @evento.horaInicio %>
+    </p>
 
-<p>
-  <strong>Horainicio:</strong>
-  <%= @evento.horaInicio %>
-</p>
+    <p>
+      <strong>Horafim:</strong>
+      <%= @evento.horaFim %>
+    </p>
 
-<p>
-  <strong>Horafim:</strong>
-  <%= @evento.horaFim %>
-</p>
+    <p>
+      <strong>Latitude:</strong>
+      <%= @evento.latitude %>
+    </p>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @evento.latitude %>
-</p>
+    <p>
+      <strong>Longitude:</strong>
+      <%= @evento.longitude %>
+    </p>
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @evento.longitude %>
-</p>
-
-<%= link_to 'Edit', edit_evento_path(@evento) %> |
-<%= link_to 'Back', eventos_path %>
+  </div>
+</div>
