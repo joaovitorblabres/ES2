@@ -41,8 +41,9 @@ textarea#desc{
   max-height: 25%;
 }
 
-#mapouter {
+#map {
   margin: auto;
-  height: 400px;  /* The height is 400 pixels */
-  width: 70%;  /* The width is the width of the web page */
+  min-height: 500px;  /* The height is 400 pixels */
+  height: 90%;
+  width: 100%;  /* The width is the width of the web page */
 }

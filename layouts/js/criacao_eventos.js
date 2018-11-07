@@ -6,12 +6,9 @@ function initMap() {
   };
 
   var map = new google.maps.Map(document.getElementById('mapouter'), {
-    zoom: 14,
+    zoom: 13,
     center: myLatLng
   });
-   //ainda n está pronto
-   // Using the function to create multiple markers
-  geocodeLatLng("-27.1009343, -52.615699","TESTE","SLA");
   var markers = [];
   var infowindow = new google.maps.InfoWindow({maxWidth: 300});
 
@@ -43,11 +40,15 @@ function initMap() {
     });
   }
   google.maps.event.addListener(map, 'click', function(event) {
-    var lat = event.latLng.lat();
-    var lng = event.latLng.lng();
-    document.getElementById('lati').value = lat;
-    document.getElementById('long').value = lng;
-    placeMarker(event.latLng);
+    if(markers.length == 0){
+      var lat = event.latLng.lat();
+      var lng = event.latLng.lng();
+      document.getElementById('lati').value = lat;
+      document.getElementById('long').value = lng;
+      placeMarker(event.latLng);
+    } else {
+      alert("Já foi adicionada uma localização\nUtilize o botão direito para remover e adicionar outra!");
+    }
   });
   google.maps.event.addListener(map, 'rightclick', function(event) {
     removeLast();
@@ -67,4 +68,9 @@ function initMap() {
       markers.push(marker);
   }
 
+  $(".mdl-button--colored").click(function(){
+    if(markers.length == 0){
+      alert("É necessário adicionar um marcador para seu evento");
+    }
+  });
 }
