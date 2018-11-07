@@ -10,4 +10,8 @@ module ApplicationHelper
   def logged
     current_user || current_company
   end
+
+  def logged_is?(name)
+    logged.class.name.downcase == name.to_s
+  end
 end
